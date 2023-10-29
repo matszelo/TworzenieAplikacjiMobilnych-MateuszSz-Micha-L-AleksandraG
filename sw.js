@@ -1,51 +1,43 @@
+const staticCacheName = 'site-static-v4';
+const assets = [
+  "./",
+  './index.html',
+  './src/master.css',
+  './css/styles.css',
+  './images/logo192.png',
+
+];
+
 //Instalacja SW
-self.addEventListener("install", (event) => {
-    function onInstall() {
-      return caches
-        .open("static")
-        .then((cache) =>
-          cache.addAll([
-            "/",
-            "/src/master.css",
-            "/images/logo192.png",
-          ])
-        );
-    }
-   
-    event.waitUntil(onInstall(event));
-  });
+self.addEventListener('install', event => {
+    event.waitUntil(
+      caches.open(staticCacheName).then(cache => {
+      console.log('Buforowanie zasobów plików')
+      cache.addAll(assets)
+      })
+    )
+});
+
+//Aktywacja SW
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>{       //Automatyczne usuwanie starych cache
+      return Promise.all(keys
+        .filter(key => key !== staticCacheName)
+        .map(key => caches.delete(key))
+      )
+    })
+  )
+});
 
 //Fetch Event
-  self.addEventListener("fetch", (event) => {
-    event.respondWith(
-      caches.match(event.request).then((response) => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-    );
-  });
-
-  //Aktywacja SW
-  self.addEventListener("activate", (event) => {
-    function onActivate() {
-      return caches.keys().then((keys) => {
-        return Promise.all(
-          keys.filter((key) => key !== "static").map((key) => caches.delete(key))
-        );
-      });
-    }
-   
-    event.waitUntil(onActivate(event));
-  });
-
-  navigator.serviceWorker.ready.then((swRegistration) => {
-    return swRegistration.sync.register("event1");
-  });
-
-  self.addEventListener("sync", (event) => {
-    if (event.tag === "event1") {
-      event.waitUntil(doSomething());
-    }
-  });
+self.addEventListener('fetch', event => {
+  event.respondWith(        //Pliki offline
+    caches.match(event.request).then((response) => {
+      if (response) {
+        return response;
+      }
+      return fetch(event.request);
+    })
+  );
+});

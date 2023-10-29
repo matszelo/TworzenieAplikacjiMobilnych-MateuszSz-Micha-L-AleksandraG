@@ -1,4 +1,5 @@
-const staticCacheName = 'site-static-v6';
+const staticCacheName = 'site-static-v2';
+const dynamicCache = 'site-dynamic-v2'
 const assets = [
   "./",
   './index.html',
@@ -33,11 +34,16 @@ self.addEventListener('activate', event => {
 //Fetch Event
 self.addEventListener('fetch', event => {
   event.respondWith(        //Pliki offline
-    caches.match(event.request).then((response) => {
+    caches.match(event.request).then(response => {
       if (response) {
         return response;
       }
-      return fetch(event.request);
+      return fetch(event.request).then(fetchResponse =>{
+        return caches.open(dynamicCache).then(cache =>{
+          cache.put(event.request.url, fetchResponse.clone())
+          return fetchResponse;
+        })
+      });
     })
   );
 });

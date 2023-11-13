@@ -23,6 +23,14 @@ const requestNotificationPermission = async () => {
     }
 }
 
+const button = document.querySelector("login-page-navlink1 button")
+button.addEventListener("click", () => {
+    alert("Zalogowano")
+})
+
+
+
+
 checkPermission()
 registerSW()
 requestNotificationPermission()

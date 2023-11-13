@@ -332,7 +332,7 @@
   align-items: center;
   justify-content: center;
 }
-.home-page-login-button19 {
+.home-page-login-navlink1 {
   width: 210px;
   height: 100%;
   font-size: 15px;
@@ -343,6 +343,17 @@
   margin-right: 5px;
   border-radius: var(--dl-radius-radius-radius8);
   text-decoration: none;
+  background-color: rgb(255, 193, 0);
+}
+.home-page-login-button19 {
+  width: 210px;
+  height: 100%;
+  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: var(--dl-radius-radius-radius8);
   background-color: rgb(255, 193, 0);
 }
 .home-page-login-button20 {
@@ -359,17 +370,6 @@
 .home-page-login-button21 {
   width: 210px;
   height: 100%;
-  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
-  font-style: normal;
-  font-weight: 600;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: rgb(255, 193, 0);
-}
-.home-page-login-button22 {
-  width: 210px;
-  height: 100%;
   padding: 0px;
   box-shadow: 0px 5px 10px 0px #7e7b7b;
   text-align: center;
@@ -379,6 +379,17 @@
 .home-page-login-text25 {
   font-style: normal;
   font-weight: 600;
+}
+.home-page-login-button22 {
+  width: 210px;
+  height: 100%;
+  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(255, 193, 0);
 }
 .home-page-login-button23 {
   width: 210px;
@@ -413,17 +424,6 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: rgb(255, 193, 0);
 }
-.home-page-login-button26 {
-  width: 210px;
-  height: 100%;
-  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
-  font-style: normal;
-  font-weight: 600;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: rgb(255, 193, 0);
-}
 .home-page-login-search {
   flex: 0 0 auto;
   width: 100%;
@@ -444,7 +444,7 @@
   margin-right: 0px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.home-page-login-button27 {
+.home-page-login-button26 {
   box-shadow: 0px 5px 10px 0px #7e7b7b;
   margin-left: var(--dl-space-space-halfunit);
   border-width: 0px;
@@ -609,7 +609,7 @@
   .home-page-login-form {
     width: 100%;
   }
-  .home-page-login-button19 {
+  .home-page-login-navlink1 {
     font-size: 15px;
     box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
     font-style: inherit;
@@ -617,10 +617,10 @@
     text-decoration: none;
     background-color: rgb(255, 193, 0);
   }
-  .home-page-login-button20 {
+  .home-page-login-button19 {
     background-color: rgb(255, 193, 0);
   }
-  .home-page-login-button23 {
+  .home-page-login-button22 {
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-form3 {
@@ -817,7 +817,7 @@
     height: 64px;
     margin-top: 8px;
   }
-  .home-page-login-button19 {
+  .home-page-login-navlink1 {
     font-size: 15px;
     box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
     font-style: inherit;
@@ -827,7 +827,7 @@
     text-decoration: none;
     background-color: rgb(255, 193, 0);
   }
-  .home-page-login-button20 {
+  .home-page-login-button19 {
     padding: 0px;
     font-size: 14px;
     box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
@@ -839,17 +839,21 @@
     padding-bottom: 0px;
     background-color: rgb(255, 193, 0);
   }
-  .home-page-login-button21 {
+  .home-page-login-button20 {
     font-size: 15px;
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-text25 {
     font-size: 15px;
   }
-  .home-page-login-button23 {
+  .home-page-login-button22 {
     font-size: 15px;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+    background-color: rgb(255, 193, 0);
+  }
+  .home-page-login-button23 {
+    font-size: 15px;
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-button24 {
@@ -857,10 +861,6 @@
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-button25 {
-    font-size: 15px;
-    background-color: rgb(255, 193, 0);
-  }
-  .home-page-login-button26 {
     font-size: 15px;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1076,6 +1076,11 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .home-page-login-navlink1 {
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .home-page-login-button19 {
     font-size: 14px;
     padding-left: 1rem;
@@ -1083,21 +1088,21 @@
   }
   .home-page-login-button20 {
     font-size: 14px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .home-page-login-button21 {
-    font-size: 14px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-text25 {
     font-size: 14px;
   }
-  .home-page-login-button23 {
+  .home-page-login-button22 {
     font-size: 14px;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .home-page-login-button23 {
+    font-size: 14px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
   }
   .home-page-login-button24 {
     font-size: 14px;
@@ -1105,11 +1110,6 @@
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-button25 {
-    font-size: 14px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
-  }
-  .home-page-login-button26 {
     font-size: 14px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1386,14 +1386,14 @@
   .home-page-login-categories1 {
     display: none;
   }
-  .home-page-login-button19 {
+  .home-page-login-navlink1 {
     font-size: 10px;
     margin-left: 0px;
   }
-  .home-page-login-button20 {
+  .home-page-login-button19 {
     font-size: 10px;
   }
-  .home-page-login-button21 {
+  .home-page-login-button20 {
     font-size: 10px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
@@ -1401,8 +1401,13 @@
   .home-page-login-text25 {
     font-size: 10px;
   }
+  .home-page-login-button22 {
+    font-size: 10px;
+  }
   .home-page-login-button23 {
     font-size: 10px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
   }
   .home-page-login-button24 {
     font-size: 10px;
@@ -1410,11 +1415,6 @@
     background-color: rgb(255, 193, 0);
   }
   .home-page-login-button25 {
-    font-size: 10px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
-  }
-  .home-page-login-button26 {
     font-size: 10px;
     margin-right: 0px;
   }

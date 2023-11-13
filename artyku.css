@@ -42,13 +42,12 @@
   border-radius: var(--dl-radius-radius-radius8);
   text-transform: capitalize;
 }
-.artyku-navlink1 {
+.artyku-button {
   box-shadow: 0px 5px 10px 0px #7e7b7b;
   margin-left: 10px;
   border-width: 0px;
   margin-right: 10px;
   border-radius: var(--dl-radius-radius-radius8);
-  text-decoration: none;
   background-color: #ff7c00;
 }
 .artyku-text {
@@ -345,17 +344,6 @@
   justify-content: center;
   background-color: #F3F3F3;
 }
-.artyku-button18 {
-  width: 210px;
-  height: 100%;
-  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
-  font-style: normal;
-  font-weight: 600;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: rgb(255, 193, 0);
-}
 .artyku-button19 {
   width: 210px;
   height: 100%;
@@ -381,6 +369,17 @@
 .artyku-button21 {
   width: 210px;
   height: 100%;
+  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(255, 193, 0);
+}
+.artyku-button22 {
+  width: 210px;
+  height: 100%;
   box-shadow: 0px 5px 10px 0px #7e7b7b;
   padding-left: 1rem;
   border-radius: var(--dl-radius-radius-radius8);
@@ -390,17 +389,6 @@
 .artyku-text23 {
   font-style: normal;
   font-weight: 600;
-}
-.artyku-button22 {
-  width: 210px;
-  height: 100%;
-  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
-  font-style: normal;
-  font-weight: 600;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: rgb(255, 193, 0);
 }
 .artyku-button23 {
   width: 210px;
@@ -435,6 +423,17 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: rgb(255, 193, 0);
 }
+.artyku-button26 {
+  width: 210px;
+  height: 100%;
+  box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(255, 193, 0);
+}
 .artyku-search {
   flex: 0 0 auto;
   width: 100%;
@@ -453,7 +452,7 @@
   border-width: 2px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.artyku-button26 {
+.artyku-button27 {
   box-shadow: 0px 5px 10px 0px #7e7b7b;
   margin-left: var(--dl-space-space-halfunit);
   border-width: 0px;
@@ -670,7 +669,7 @@
 .artyku-text34 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button27 {
+.artyku-button28 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -706,7 +705,7 @@
 .artyku-text36 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button28 {
+.artyku-button29 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -742,7 +741,7 @@
 .artyku-text38 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button29 {
+.artyku-button30 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -778,7 +777,7 @@
 .artyku-text40 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button30 {
+.artyku-button31 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -823,7 +822,7 @@
 .artyku-text42 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button31 {
+.artyku-button32 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -859,7 +858,7 @@
 .artyku-text44 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button32 {
+.artyku-button33 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -895,7 +894,7 @@
 .artyku-text46 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button33 {
+.artyku-button34 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -931,7 +930,7 @@
 .artyku-text48 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button34 {
+.artyku-button35 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -978,7 +977,7 @@
 .artyku-text50 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button35 {
+.artyku-button36 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1014,7 +1013,7 @@
 .artyku-text52 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button36 {
+.artyku-button37 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1050,7 +1049,7 @@
 .artyku-text54 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button37 {
+.artyku-button38 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1086,7 +1085,7 @@
 .artyku-text56 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button38 {
+.artyku-button39 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1131,7 +1130,7 @@
 .artyku-text58 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button39 {
+.artyku-button40 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1165,7 +1164,7 @@
 .artyku-text60 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button40 {
+.artyku-button41 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1199,7 +1198,7 @@
 .artyku-text62 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button41 {
+.artyku-button42 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1233,7 +1232,7 @@
 .artyku-text64 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.artyku-button42 {
+.artyku-button43 {
   font-style: normal;
   font-weight: 700;
   background-color: #ff7c00;
@@ -1391,10 +1390,10 @@
     flex: 1;
     height: 766px;
   }
-  .artyku-button19 {
+  .artyku-button20 {
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button22 {
+  .artyku-button23 {
     background-color: rgb(255, 193, 0);
   }
   .artyku-form3 {
@@ -1454,7 +1453,7 @@
   .artyku-textinput {
     width: 262px;
   }
-  .artyku-navlink1 {
+  .artyku-button {
     margin-left: 15px;
   }
   .artyku-login {
@@ -1529,18 +1528,18 @@
   .artyku-textinput1 {
     width: 262px;
   }
-  .artyku-button {
+  .artyku-button01 {
     margin-left: 15px;
   }
   .artyku-categories {
     margin-top: 8px;
   }
-  .artyku-button01 {
+  .artyku-button02 {
     font-weight: 400;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .artyku-button02 {
+  .artyku-button03 {
     padding: 0px;
     padding-top: 0px;
     padding-left: 5px;
@@ -1548,11 +1547,11 @@
     padding-bottom: 0px;
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button05 {
+  .artyku-button06 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .artyku-button08 {
+  .artyku-button09 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
@@ -1598,19 +1597,19 @@
   .artyku-textinput2 {
     width: 262px;
   }
-  .artyku-button09 {
+  .artyku-button10 {
     margin-left: 15px;
   }
-  .artyku-button10 {
+  .artyku-button11 {
     font-weight: 400;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .artyku-button12 {
+  .artyku-button13 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .artyku-button14 {
+  .artyku-button15 {
     padding: 0px;
     padding-top: 0px;
     padding-left: 5px;
@@ -1618,7 +1617,7 @@
     padding-bottom: 0px;
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button17 {
+  .artyku-button18 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
@@ -1630,14 +1629,14 @@
     height: 64px;
     margin-top: 8px;
   }
-  .artyku-button18 {
+  .artyku-button19 {
     font-size: 15px;
     font-weight: 400;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button19 {
+  .artyku-button20 {
     padding: 0px;
     font-size: 15px;
     padding-top: 0px;
@@ -1646,21 +1645,17 @@
     padding-bottom: 0px;
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button20 {
+  .artyku-button21 {
     font-size: 15px;
     background-color: rgb(255, 193, 0);
   }
   .artyku-text23 {
     font-size: 15px;
   }
-  .artyku-button22 {
+  .artyku-button23 {
     font-size: 15px;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
-    background-color: rgb(255, 193, 0);
-  }
-  .artyku-button23 {
-    font-size: 15px;
     background-color: rgb(255, 193, 0);
   }
   .artyku-button24 {
@@ -1668,6 +1663,10 @@
     background-color: rgb(255, 193, 0);
   }
   .artyku-button25 {
+    font-size: 15px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button26 {
     font-size: 15px;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1781,11 +1780,6 @@
   .artyku-form1 {
     width: 421px;
   }
-  .artyku-button01 {
-    font-size: 14px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .artyku-button02 {
     font-size: 14px;
     padding-left: 0px;
@@ -1793,21 +1787,21 @@
   }
   .artyku-button03 {
     font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .artyku-button04 {
+    font-size: 14px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
   }
   .artyku-text10 {
     font-size: 14px;
   }
-  .artyku-button05 {
+  .artyku-button06 {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .artyku-button06 {
-    font-size: 14px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
   }
   .artyku-button07 {
     font-size: 14px;
@@ -1815,6 +1809,11 @@
     background-color: rgb(255, 193, 0);
   }
   .artyku-button08 {
+    font-size: 14px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button09 {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
@@ -1839,27 +1838,27 @@
   .artyku-form2 {
     width: 421px;
   }
-  .artyku-button10 {
+  .artyku-button11 {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .artyku-button11 {
-    font-size: 14px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
   }
   .artyku-button12 {
     font-size: 14px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button13 {
+    font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
   }
-  .artyku-button13 {
+  .artyku-button14 {
     font-size: 14px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button14 {
+  .artyku-button15 {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
@@ -1867,20 +1866,15 @@
   .artyku-text19 {
     font-size: 14px;
   }
-  .artyku-button16 {
+  .artyku-button17 {
     font-size: 14px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button17 {
+  .artyku-button18 {
     font-size: 14px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .artyku-button18 {
-    font-size: 14px;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
   .artyku-button19 {
     font-size: 14px;
@@ -1889,21 +1883,21 @@
   }
   .artyku-button20 {
     font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .artyku-button21 {
+    font-size: 14px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
   }
   .artyku-text23 {
     font-size: 14px;
   }
-  .artyku-button22 {
+  .artyku-button23 {
     font-size: 14px;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .artyku-button23 {
-    font-size: 14px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
   }
   .artyku-button24 {
     font-size: 14px;
@@ -1911,6 +1905,11 @@
     background-color: rgb(255, 193, 0);
   }
   .artyku-button25 {
+    font-size: 14px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button26 {
     font-size: 14px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1973,14 +1972,14 @@
     align-self: center;
     justify-content: center;
   }
-  .artyku-button01 {
+  .artyku-button02 {
     font-size: 10px;
     margin-left: 0px;
   }
-  .artyku-button02 {
+  .artyku-button03 {
     font-size: 10px;
   }
-  .artyku-button03 {
+  .artyku-button04 {
     font-size: 10px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
@@ -1988,13 +1987,8 @@
   .artyku-text10 {
     font-size: 10px;
   }
-  .artyku-button05 {
-    font-size: 10px;
-  }
   .artyku-button06 {
     font-size: 10px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
   }
   .artyku-button07 {
     font-size: 10px;
@@ -2002,6 +1996,11 @@
     background-color: rgb(255, 193, 0);
   }
   .artyku-button08 {
+    font-size: 10px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button09 {
     font-size: 10px;
     margin-right: 0px;
   }
@@ -2034,7 +2033,7 @@
     border-radius: var(--dl-radius-radius-radius8);
     text-transform: capitalize;
   }
-  .artyku-button09 {
+  .artyku-button10 {
     box-shadow: 0px 5px 10px 0px #7e7b7b;
     border-width: 0px;
     border-radius: var(--dl-radius-radius-radius8);
@@ -2055,7 +2054,7 @@
   .artyku-container07 {
     position: relative;
   }
-  .artyku-button10 {
+  .artyku-button11 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
     font-size: 15px;
@@ -2071,20 +2070,6 @@
     margin-bottom: var(--dl-space-space-twounits);
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button11 {
-    width: var(--dl-size-size-xlarge);
-    height: var(--dl-size-size-medium);
-    font-size: 15px;
-    box-shadow: 0px 5px 10px 0px #7e7b7b;
-    font-style: normal;
-    margin-top: var(--dl-space-space-twounits);
-    font-weight: 700;
-    margin-left: mixed;
-    border-width: 0px;
-    margin-right: mixed;
-    margin-bottom: var(--dl-space-space-twounits);
-    background-color: rgb(255, 193, 0);
-  }
   .artyku-button12 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
@@ -2097,7 +2082,7 @@
     border-width: 0px;
     margin-right: mixed;
     margin-bottom: var(--dl-space-space-twounits);
-    background-color: #ffc100;
+    background-color: rgb(255, 193, 0);
   }
   .artyku-button13 {
     width: var(--dl-size-size-xlarge);
@@ -2111,9 +2096,23 @@
     border-width: 0px;
     margin-right: mixed;
     margin-bottom: var(--dl-space-space-twounits);
-    background-color: rgb(255, 193, 0);
+    background-color: #ffc100;
   }
   .artyku-button14 {
+    width: var(--dl-size-size-xlarge);
+    height: var(--dl-size-size-medium);
+    font-size: 15px;
+    box-shadow: 0px 5px 10px 0px #7e7b7b;
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
+    font-weight: 700;
+    margin-left: mixed;
+    border-width: 0px;
+    margin-right: mixed;
+    margin-bottom: var(--dl-space-space-twounits);
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button15 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
     padding: 0px;
@@ -2129,7 +2128,7 @@
     margin-right: mixed;
     margin-bottom: var(--dl-space-space-twounits);
   }
-  .artyku-button15 {
+  .artyku-button16 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
     align-self: center;
@@ -2146,7 +2145,7 @@
     font-style: normal;
     font-weight: 700;
   }
-  .artyku-button16 {
+  .artyku-button17 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
     font-size: 15px;
@@ -2161,7 +2160,7 @@
     margin-bottom: var(--dl-space-space-twounits);
     background-color: rgb(255, 193, 0);
   }
-  .artyku-button17 {
+  .artyku-button18 {
     width: var(--dl-size-size-xlarge);
     height: var(--dl-size-size-medium);
     font-size: 15px;
@@ -2186,14 +2185,14 @@
   .artyku-categories1 {
     display: none;
   }
-  .artyku-button18 {
+  .artyku-button19 {
     font-size: 10px;
     margin-left: 0px;
   }
-  .artyku-button19 {
+  .artyku-button20 {
     font-size: 10px;
   }
-  .artyku-button20 {
+  .artyku-button21 {
     font-size: 10px;
     box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
     background-color: rgb(255, 193, 0);
@@ -2201,13 +2200,8 @@
   .artyku-text23 {
     font-size: 10px;
   }
-  .artyku-button22 {
-    font-size: 10px;
-  }
   .artyku-button23 {
     font-size: 10px;
-    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
-    background-color: rgb(255, 193, 0);
   }
   .artyku-button24 {
     font-size: 10px;
@@ -2215,6 +2209,11 @@
     background-color: rgb(255, 193, 0);
   }
   .artyku-button25 {
+    font-size: 10px;
+    box-shadow: rgb(163, 154, 127) 5px 5px 10px 0px;
+    background-color: rgb(255, 193, 0);
+  }
+  .artyku-button26 {
     font-size: 10px;
     margin-right: 0px;
   }
@@ -2266,9 +2265,6 @@
   .artyku-container06 {
     width: 366px;
   }
-  .artyku-button10 {
-    margin-right: var(--dl-space-space-oneandhalfunits);
-  }
   .artyku-button11 {
     margin-right: var(--dl-space-space-oneandhalfunits);
   }
@@ -2279,7 +2275,7 @@
     margin-right: var(--dl-space-space-oneandhalfunits);
   }
   .artyku-button14 {
-    margin-left: var(--dl-space-space-oneandhalfunits);
+    margin-right: var(--dl-space-space-oneandhalfunits);
   }
   .artyku-button15 {
     margin-left: var(--dl-space-space-oneandhalfunits);
@@ -2288,6 +2284,9 @@
     margin-left: var(--dl-space-space-oneandhalfunits);
   }
   .artyku-button17 {
+    margin-left: var(--dl-space-space-oneandhalfunits);
+  }
+  .artyku-button18 {
     margin-left: var(--dl-space-space-oneandhalfunits);
   }
   .artyku-body {

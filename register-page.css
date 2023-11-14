@@ -69,12 +69,13 @@
 .register-page-textinput4 {
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
-.register-page-button {
+.register-page-navlink1 {
   box-shadow: rgb(126, 123, 123) 0px 5px 10px 0px;
   font-style: normal;
   text-align: center;
   font-weight: 700;
   border-width: 0px;
+  text-decoration: none;
   background-color: rgb(255, 124, 0);
 }
 .register-page-text01 {
@@ -125,9 +126,13 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.register-page-navlink2 {
+  display: contents;
+}
 .register-page-image1 {
   width: 200px;
   object-fit: cover;
+  text-decoration: none;
 }
 .register-page-text03 {
   color: #ffffff;
@@ -338,7 +343,7 @@
   .register-page-text {
     margin-top: var(--dl-space-space-threeunits);
   }
-  .register-page-button {
+  .register-page-navlink1 {
     margin-bottom: 0px;
   }
   .register-page-register {
@@ -422,7 +427,7 @@
   .register-page-container1 {
     width: 400px;
   }
-  .register-page-button {
+  .register-page-navlink1 {
     box-shadow: 0px 5px 10px 0px #7e7b7b;
     border-width: 0px;
   }

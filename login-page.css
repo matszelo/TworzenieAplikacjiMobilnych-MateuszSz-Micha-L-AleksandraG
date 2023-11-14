@@ -120,9 +120,13 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.login-page-navlink2 {
+  display: contents;
+}
 .login-page-image1 {
   width: 200px;
   object-fit: cover;
+  text-decoration: none;
 }
 .login-page-text03 {
   color: #ffffff;

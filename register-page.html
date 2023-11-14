@@ -5,6 +5,7 @@
     <meta property="og:title" content="RegisterPage - exported project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link rel="manifest" href="manifest.json">
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
@@ -102,8 +103,11 @@
               placeholder="Hasło"
               class="register-page-textinput4 input"
             />
-            <button type="button" class="register-page-button button">
-              Utwórz konto
+            <button type="button" id="register_btn" class="register-page-navlink1 button">
+              <span >
+                <span>Utwórz konto</span>
+                <br />
+              </span>
             </button>
             <span class="register-page-text01">Masz już konto?</span>
             <a href="login-page.html" class="register-page-register button">
@@ -121,11 +125,13 @@
         </div>
         <footer class="register-page-footer">
           <div class="register-page-container2">
-            <img
-              alt="image"
-              src="public/smaczne%201-200h.png"
-              class="register-page-image1"
-            />
+            <a href="index.html" class="register-page-navlink2">
+              <img
+                alt="image"
+                src="public/smaczne%201-200h.png"
+                class="register-page-image1"
+              />
+            </a>
             <span class="register-page-text03">
               <span>© 2023 Zamów Produkty,</span>
               <br />
@@ -183,5 +189,6 @@
         </footer>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

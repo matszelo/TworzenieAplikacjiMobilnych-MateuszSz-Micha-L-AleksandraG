@@ -3,8 +3,8 @@ const dynamicCache = 'site-dynamic-v1'
 const assets = [
   "./",
   './index.html',
-  './src/master.css',
-  './css/styles.css',
+  './index.css',
+  './style.css',
   './images/logo192.png',
 
 ];

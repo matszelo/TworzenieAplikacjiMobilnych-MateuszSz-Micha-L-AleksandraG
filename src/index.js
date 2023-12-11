@@ -28,31 +28,29 @@ const registerSW = async () => {
   const registerBtn = document.getElementById('register_btn');
 
   if (registerBtn) {
-    // Dodaj obsługę wibracji w obszarze rejestracji service workera
-    registerBtn.addEventListener('click', async () => {
+    // Dodaj nasłuchiwanie na zdarzenie kliknięcia przycisku rejestracji
+    registerBtn.addEventListener('click', () => {
+
       // Sprawdź, czy przeglądarka obsługuje API powiadomień
       if ('Notification' in window) {
+
         // Poproś o zgodę na wyświetlanie powiadomień
-        const permission = await Notification.requestPermission();
+        Notification.requestPermission().then(permission => {
 
-        // Jeśli zgodę udzielono ('granted'), wyślij powiadomienie i dodaj wibracje
-        if (permission === 'granted') {
-          new Notification('Rejestracja', {
-            body: 'Udało Ci się zarejestrować! Zaloguj się!',
-          });
+          // Jeśli zgodę udzielono ('granted'), wyślij powiadomienie
+          if (permission === 'granted') {
+            new Notification('Rejestracja', {
+              body: 'Udało Ci się zarejestrować! Zaloguj się!',
+            });
 
-          // Dodanie wibracji po kliknięciu przycisku rejestracji
-          if ('vibrate' in navigator) {
-            navigator.vibrate([200, 100, 200]); // Przykładowe wartości do dostosowania
-         }
-
-          // Przekierowanie na stronę login-page.html po kliknięciu i wyświetleniu powiadomienia
-          window.location.href = 'login-page.html';
-        }
-     } else {
-       // Komunikat o błędzie, jeśli przeglądarka nie obsługuje powiadomień
-       console.error('Twoja przeglądarka nie obsługuje powiadomień.');
-     }
+            // Przekierowanie na stronę login-page.html po kliknięciu i wyświetleniu powiadomienia
+            window.location.href = 'login-page.html';
+          }
+        });
+      } else {
+        // Komunikat o błędzie, jeśli przeglądarka nie obsługuje powiadomień
+        console.error('Twoja przeglądarka nie obsługuje powiadomień.');
+      }
     });
   }
 
@@ -69,38 +67,34 @@ function geoFindMe() {
   mapLink.textContent = "";
 
   // Funkcja wywoływana w przypadku sukcesu w uzyskaniu lokalizacji
-function success(position) {
-  // Pobranie szerokości i długości geograficznej
-  const latitude = position.coords.latitude;
-  const longitude = position.coords.longitude;
+  function success(position) {
+    // Pobranie szerokości i długości geograficznej
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
 
-  // Dodanie wibracji po uzyskaniu lokalizacji
-  if ('vibrate' in navigator) {
-    navigator.vibrate([200, 100, 200]); // Przykładowe wartości do dostosowania
+    // Wyświetlenie komunikatu o lokalizacji
+    status.textContent = "Locating…";
+
+    // Wywołanie usługi Geocoding API w celu uzyskania adresu na podstawie współrzędnych geograficznych
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=8010c207e2cc41d581a6ce30a4625538`)
+      .then(response => response.json())
+      .then(data => {
+        // Sprawdzenie, czy istnieją wyniki i czy uzyskano adres
+        if (data.results && data.results.length > 0) {
+          const address = data.results[0].formatted;
+          status.textContent = `Address: ${address}`;
+
+        } else {
+          // Komunikat, gdy nie udało się uzyskać adresu
+          status.textContent = "Unable to retrieve address";
+        }
+      })
+      .catch(error => {
+        // Obsługa błędu przy uzyskiwaniu adresu
+        status.textContent = "Error retrieving address";
+        console.error(error);
+      });
   }
-
-  // Wyświetlenie komunikatu o lokalizacji
-  status.textContent = "Locating…";
-
-  // Wywołanie usługi Geocoding API w celu uzyskania adresu na podstawie współrzędnych geograficznych
-  fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=8010c207e2cc41d581a6ce30a4625538`)
-    .then(response => response.json())
-    .then(data => {
-      // Sprawdzenie, czy istnieją wyniki i czy uzyskano adres
-      if (data.results && data.results.length > 0) {
-        const address = data.results[0].formatted;
-        status.textContent = `Address: ${address}`;
-      } else {
-        // Komunikat, gdy nie udało się uzyskać adresu
-        status.textContent = "Unable to retrieve address";
-      }
-    })
-    .catch(error => {
-      // Obsługa błędu przy uzyskiwaniu adresu
-      status.textContent = "Error retrieving address";
-      console.error(error);
-    });
-}
 
   // Funkcja wywoływana w przypadku błędu przy uzyskiwaniu lokalizacji
   function error() {
@@ -117,10 +111,12 @@ function success(position) {
 }
 
 // Dodanie nasłuchiwania na kliknięcie przycisku o id "find-me" i wywołanie funkcji geoFindMe
-document.querySelector("#find-me").addEventListener("click", () => {
-  geoFindMe(); // Wywołaj funkcję geoFindMe po kliknięciu, a wibracje zostaną wywołane w odpowiedzi na tę interakcję
-});
+document.querySelector("#find-me").addEventListener("click", geoFindMe);
 
+
+
+
+  
 // Wywołanie funkcji sprawdzającej dostęp do service workera i interfejsu API powiadomień
 checkPermission();
 

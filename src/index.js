@@ -28,29 +28,31 @@ const registerSW = async () => {
   const registerBtn = document.getElementById('register_btn');
 
   if (registerBtn) {
-    // Dodaj nasłuchiwanie na zdarzenie kliknięcia przycisku rejestracji
-    registerBtn.addEventListener('click', () => {
-
+    // Dodaj obsługę wibracji w obszarze rejestracji service workera
+    registerBtn.addEventListener('click', async () => {
       // Sprawdź, czy przeglądarka obsługuje API powiadomień
       if ('Notification' in window) {
-
         // Poproś o zgodę na wyświetlanie powiadomień
-        Notification.requestPermission().then(permission => {
+        const permission = await Notification.requestPermission();
 
-          // Jeśli zgodę udzielono ('granted'), wyślij powiadomienie
-          if (permission === 'granted') {
-            new Notification('Rejestracja', {
-              body: 'Udało Ci się zarejestrować! Zaloguj się!',
-            });
+        // Jeśli zgodę udzielono ('granted'), wyślij powiadomienie i dodaj wibracje
+        if (permission === 'granted') {
+          new Notification('Rejestracja', {
+            body: 'Udało Ci się zarejestrować! Zaloguj się!',
+          });
 
-            // Przekierowanie na stronę login-page.html po kliknięciu i wyświetleniu powiadomienia
-            window.location.href = 'login-page.html';
-          }
-        });
-      } else {
-        // Komunikat o błędzie, jeśli przeglądarka nie obsługuje powiadomień
-        console.error('Twoja przeglądarka nie obsługuje powiadomień.');
-      }
+          // Dodanie wibracji po kliknięciu przycisku rejestracji
+          if ('vibrate' in navigator) {
+            navigator.vibrate([200, 100, 200]); // Przykładowe wartości do dostosowania
+         }
+
+          // Przekierowanie na stronę login-page.html po kliknięciu i wyświetleniu powiadomienia
+          window.location.href = 'login-page.html';
+        }
+     } else {
+       // Komunikat o błędzie, jeśli przeglądarka nie obsługuje powiadomień
+       console.error('Twoja przeglądarka nie obsługuje powiadomień.');
+     }
     });
   }
 
@@ -119,10 +121,6 @@ document.querySelector("#find-me").addEventListener("click", () => {
   geoFindMe(); // Wywołaj funkcję geoFindMe po kliknięciu, a wibracje zostaną wywołane w odpowiedzi na tę interakcję
 });
 
-
-
-
-  
 // Wywołanie funkcji sprawdzającej dostęp do service workera i interfejsu API powiadomień
 checkPermission();
 

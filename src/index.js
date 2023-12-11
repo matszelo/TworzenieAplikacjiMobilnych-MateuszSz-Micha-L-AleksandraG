@@ -67,34 +67,38 @@ function geoFindMe() {
   mapLink.textContent = "";
 
   // Funkcja wywoływana w przypadku sukcesu w uzyskaniu lokalizacji
-  function success(position) {
-    // Pobranie szerokości i długości geograficznej
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
+function success(position) {
+  // Pobranie szerokości i długości geograficznej
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
 
-    // Wyświetlenie komunikatu o lokalizacji
-    status.textContent = "Locating…";
-
-    // Wywołanie usługi Geocoding API w celu uzyskania adresu na podstawie współrzędnych geograficznych
-    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=8010c207e2cc41d581a6ce30a4625538`)
-      .then(response => response.json())
-      .then(data => {
-        // Sprawdzenie, czy istnieją wyniki i czy uzyskano adres
-        if (data.results && data.results.length > 0) {
-          const address = data.results[0].formatted;
-          status.textContent = `Address: ${address}`;
-
-        } else {
-          // Komunikat, gdy nie udało się uzyskać adresu
-          status.textContent = "Unable to retrieve address";
-        }
-      })
-      .catch(error => {
-        // Obsługa błędu przy uzyskiwaniu adresu
-        status.textContent = "Error retrieving address";
-        console.error(error);
-      });
+  // Dodanie wibracji po uzyskaniu lokalizacji
+  if ('vibrate' in navigator) {
+    navigator.vibrate([200, 100, 200]); // Przykładowe wartości do dostosowania
   }
+
+  // Wyświetlenie komunikatu o lokalizacji
+  status.textContent = "Locating…";
+
+  // Wywołanie usługi Geocoding API w celu uzyskania adresu na podstawie współrzędnych geograficznych
+  fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=8010c207e2cc41d581a6ce30a4625538`)
+    .then(response => response.json())
+    .then(data => {
+      // Sprawdzenie, czy istnieją wyniki i czy uzyskano adres
+      if (data.results && data.results.length > 0) {
+        const address = data.results[0].formatted;
+        status.textContent = `Address: ${address}`;
+      } else {
+        // Komunikat, gdy nie udało się uzyskać adresu
+        status.textContent = "Unable to retrieve address";
+      }
+    })
+    .catch(error => {
+      // Obsługa błędu przy uzyskiwaniu adresu
+      status.textContent = "Error retrieving address";
+      console.error(error);
+    });
+}
 
   // Funkcja wywoływana w przypadku błędu przy uzyskiwaniu lokalizacji
   function error() {

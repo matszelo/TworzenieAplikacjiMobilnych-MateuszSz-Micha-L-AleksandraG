@@ -40,7 +40,6 @@
   --dl-color-default-yellowbutton: rgba(255, 183, 0, 1);
   --dl-space-space-oneandhalfunits: 24px;
 }
-
 .button {
   color: var(--dl-color-gray-black);
   display: inline-block;
@@ -50,7 +49,6 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
-
 .input {
   color: var(--dl-color-gray-black);
   cursor: auto;

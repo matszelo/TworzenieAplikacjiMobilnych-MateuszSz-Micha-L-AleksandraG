@@ -164,9 +164,8 @@
 }
 .register-page-links-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: space-between;
 }
 .register-page-container3 {
   display: flex;
@@ -178,7 +177,7 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
-  margin-right: var(--dl-space-space-sixunits);
+  margin-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -209,7 +208,7 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
-  margin-right: var(--dl-space-space-sixunits);
+  margin-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -235,6 +234,7 @@
 }
 .register-page-container7 {
   flex: 0 0 auto;
+  height: 163px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

@@ -58,6 +58,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -89,11 +95,13 @@
             </form>
           </div>
           <div data-role="BurgerMenu" class="cart-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="cart-icon">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
+            <a href="bureger-menu-cart.html">
+              <svg viewBox="0 0 1024 1024" class="cart-icon">
+                <path
+                  d="M86 234h852v86h-852v-86zM86 448h852v86h-852v-86zM86 662h852v84h-852v-84z"
+                ></path>
+              </svg>
+            </a>
           </div>
           <div data-role="MobileMenu" class="cart-mobile-menu">
             <div class="cart-nav">
@@ -289,7 +297,7 @@
         <main class="cart-body">
           <div class="cart-container09">
             <div class="cart-categories1">
-              <a href="artykuly.html" class="cart-navlink1 button">
+              <a href="artykuly.html" class="cart-navlink2 button">
                 Artykuły spożywcze
               </a>
               <button type="button" class="cart-button19 button">
@@ -319,19 +327,13 @@
             </div>
           </div>
           <div class="cart-search">
-            <form class="cart-form3">
-              <input
-                type="text"
-                placeholder="Znajdź moją lokalizację"
-                class="cart-textinput3 input"
-              />
-              <button type="button" class="cart-button26 button">
-                <span class="cart-text26">
-                  <span>Znajdź</span>
-                  <br />
-                </span>
-              </button>
-            </form>
+            <button type="button" class="cart-button26 button">
+              <span class="cart-text26">
+                <span>Znajdź moją lokalizację</span>
+                <br />
+              </span>
+            </button>
+            <form class="cart-form3"></form>
           </div>
           <div class="cart-container10">
             <div class="cart-container11">
@@ -539,15 +541,15 @@
             </div>
           </div>
           <div class="cart-container31">
-            <a href="login-page.html" class="cart-navlink2 button">
+            <a href="login-page.html" class="cart-navlink3 button">
               Zaloguj się
             </a>
-            <a href="index.html" class="cart-navlink3 button">Strona główna</a>
+            <a href="index.html" class="cart-navlink4 button">Strona główna</a>
           </div>
         </main>
         <footer class="cart-footer">
           <div class="cart-container32">
-            <a href="index.html" class="cart-navlink4">
+            <a href="index.html" class="cart-navlink5">
               <img
                 alt="image"
                 src="public/smaczne%201-1500h.png"

@@ -58,6 +58,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -73,10 +79,6 @@
               class="user-profile-login-image"
             />
           </a>
-          <div
-            data-role="BurgerMenu"
-            class="user-profile-login-burger-menu"
-          ></div>
           <div data-role="MobileMenu" class="user-profile-login-mobile-menu">
             <div class="user-profile-login-nav">
               <div class="user-profile-login-container01">
@@ -319,7 +321,10 @@
                 <br />
               </span>
             </a>
-            <button class="user-profile-login-orders button">
+            <a
+              href="calendar-login.html"
+              class="user-profile-login-orders button"
+            >
               <svg viewBox="0 0 1024 1024" class="user-profile-login-icon16">
                 <path
                   d="M320 384h128v128h-128zM512 384h128v128h-128zM704 384h128v128h-128zM128 768h128v128h-128zM320 768h128v128h-128zM512 768h128v128h-128zM320 576h128v128h-128zM512 576h128v128h-128zM704 576h128v128h-128zM128 576h128v128h-128zM832 0v64h-128v-64h-448v64h-128v-64h-128v1024h960v-1024h-128zM896 960h-832v-704h832v704z"
@@ -329,7 +334,7 @@
                 <span class="user-profile-login-text23">Zamówienia</span>
                 <br />
               </span>
-            </button>
+            </a>
             <a
               href="home-page-login.html"
               class="user-profile-login-home-page button"

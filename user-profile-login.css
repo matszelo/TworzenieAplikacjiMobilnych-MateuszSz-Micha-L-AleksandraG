@@ -26,10 +26,6 @@
   object-fit: cover;
   text-decoration: none;
 }
-.user-profile-login-burger-menu {
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: none;
-}
 .user-profile-login-mobile-menu {
   top: 0px;
   left: 0px;
@@ -326,6 +322,7 @@
   flex-direction: column;
   text-transform: capitalize;
   justify-content: center;
+  text-decoration: none;
   background-color: rgb(255, 190, 0);
 }
 .user-profile-login-icon16 {
@@ -448,9 +445,8 @@
 }
 .user-profile-login-links-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: space-between;
 }
 .user-profile-login-container09 {
   display: flex;
@@ -462,7 +458,7 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
-  margin-right: var(--dl-space-space-sixunits);
+  margin-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -493,7 +489,7 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-start;
-  margin-right: var(--dl-space-space-sixunits);
+  margin-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -519,6 +515,7 @@
 }
 .user-profile-login-container13 {
   flex: 0 0 auto;
+  height: 163px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -929,7 +926,7 @@
     margin-right: 0px;
   }
   .user-profile-login-text18 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .user-profile-login-cart {
     width: 352px;
@@ -938,10 +935,7 @@
     padding-left: var(--dl-space-space-unit);
   }
   .user-profile-login-text19 {
-    font-size: 11px;
-  }
-  .user-profile-login-text20 {
-    font-size: 11px;
+    font-size: 16px;
   }
   .user-profile-login-orders {
     width: 352px;
@@ -950,7 +944,9 @@
     padding-left: var(--dl-space-space-unit);
   }
   .user-profile-login-text22 {
-    font-size: 11px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
   }
   .user-profile-login-text23 {
     font-size: 11px;
@@ -962,7 +958,7 @@
     padding-left: var(--dl-space-space-unit);
   }
   .user-profile-login-text25 {
-    font-size: 11px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
   }
@@ -976,7 +972,7 @@
     padding-left: var(--dl-space-space-unit);
   }
   .user-profile-login-text28 {
-    font-size: 11px;
+    font-size: 16px;
   }
   .user-profile-login-text29 {
     font-size: 11px;
@@ -1008,11 +1004,6 @@
     align-self: stretch;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
-  }
-  .user-profile-login-burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .user-profile-login-mobile-menu {
     display: none;

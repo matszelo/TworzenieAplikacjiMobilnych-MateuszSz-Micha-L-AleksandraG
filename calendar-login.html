@@ -58,6 +58,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -99,11 +105,13 @@
             </a>
           </div>
           <div data-role="BurgerMenu" class="calendar-login-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="calendar-login-icon04">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
+            <a href="bureger-menu-calendar-login.html">
+              <svg viewBox="0 0 1024 1024" class="calendar-login-icon04">
+                <path
+                  d="M86 234h852v86h-852v-86zM86 448h852v86h-852v-86zM86 662h852v84h-852v-84z"
+                ></path>
+              </svg>
+            </a>
           </div>
           <div data-role="MobileMenu" class="calendar-login-mobile-menu">
             <div class="calendar-login-nav">
@@ -294,25 +302,10 @@
           </div>
         </header>
         <div class="calendar-login-body">
-          <div class="calendar-login-search">
-            <form class="calendar-login-form2">
-              <input
-                type="text"
-                placeholder="Znajdź moją lokalizację"
-                class="calendar-login-textinput2 input"
-              />
-              <button type="button" class="calendar-login-button18 button">
-                <span class="calendar-login-text22">
-                  <span>Znajdź</span>
-                  <br />
-                </span>
-              </button>
-            </form>
-          </div>
           <div class="calendar-login-container08">
             <div class="calendar-login-container09">
-              <button type="button" class="calendar-login-button19 button">
-                <span class="calendar-login-text25">
+              <button type="button" class="calendar-login-button18 button">
+                <span class="calendar-login-text22">
                   <span>PIĄTEK</span>
                   <br />
                   <span>1 grudnia</span>
@@ -320,8 +313,8 @@
               </button>
             </div>
             <div class="calendar-login-container10">
-              <button type="button" class="calendar-login-button20 button">
-                <span class="calendar-login-text29">
+              <button type="button" class="calendar-login-button19 button">
+                <span class="calendar-login-text26">
                   <span>SOBOTA</span>
                   <br />
                   <span>2 grudnia</span>
@@ -330,8 +323,8 @@
               </button>
             </div>
             <div class="calendar-login-container11">
-              <button type="button" class="calendar-login-button21 button">
-                <span class="calendar-login-text34">
+              <button type="button" class="calendar-login-button20 button">
+                <span class="calendar-login-text31">
                   <span>NIEDZIELA</span>
                   <br />
                   <span>3 grudnia</span>
@@ -340,9 +333,9 @@
               </button>
             </div>
             <div class="calendar-login-container12">
-              <button type="button" class="calendar-login-button22 button">
-                <span class="calendar-login-text39">
-                  <span class="calendar-login-text40">PONIEDZIAŁEK</span>
+              <button type="button" class="calendar-login-button21 button">
+                <span class="calendar-login-text36">
+                  <span>PONIEDZIAŁEK</span>
                   <br />
                   <span>4 grudnia</span>
                   <br />
@@ -350,178 +343,180 @@
               </button>
             </div>
             <div class="calendar-login-container13">
-              <button type="button" class="calendar-login-button23 button">
-                <span class="calendar-login-text44">
+              <button type="button" class="calendar-login-button22 button">
+                <span class="calendar-login-text41">
                   <span>WTOREK</span>
                   <br />
-                  <span>5 grudnia</span>
+                  <span>5grudnia</span>
                   <br />
                 </span>
               </button>
             </div>
             <div class="calendar-login-container14">
-              <button type="button" class="calendar-login-button24 button">
-                <span class="calendar-login-text49">
+              <button type="button" class="calendar-login-button23 button">
+                <span class="calendar-login-text46">
                   <span>ŚRODA</span>
                   <br />
                   <span>6 grudnia</span>
+                  <br />
                 </span>
               </button>
             </div>
             <div class="calendar-login-container15">
-              <button type="button" class="calendar-login-button25 button">
-                <span class="calendar-login-text53">
+              <button type="button" class="calendar-login-button24 button">
+                <span class="calendar-login-text51">
                   <span>CZWARTEK</span>
                   <br />
                   <span>7 grudnia</span>
+                  <br />
                 </span>
               </button>
             </div>
           </div>
           <div class="calendar-login-container16">
             <div class="calendar-login-container17">
-              <button type="button" class="calendar-login-button26 button">
+              <button type="button" class="calendar-login-button25 button">
                 8:00 - 11:00
               </button>
             </div>
             <div class="calendar-login-container18">
-              <button type="button" class="calendar-login-button27 button">
+              <button type="button" class="calendar-login-button26 button">
                 8:00 - 11:00
               </button>
             </div>
             <div class="calendar-login-container19">
-              <button type="button" class="calendar-login-button28 button">
+              <button type="button" class="calendar-login-button27 button">
                 8:00 - 11:00
               </button>
             </div>
             <div class="calendar-login-container20">
-              <button type="button" class="calendar-login-button29 button">
+              <button type="button" class="calendar-login-button28 button">
                 <span>8:00 - 11:00</span>
               </button>
             </div>
             <div class="calendar-login-container21">
-              <button type="button" class="calendar-login-button30 button">
-                8:00 - 11:00
+              <button type="button" class="calendar-login-button29 button">
+                <span>8:00 - 11:00</span>
               </button>
             </div>
             <div class="calendar-login-container22">
-              <button type="button" class="calendar-login-button31 button">
-                8:00 - 11:00
+              <button type="button" class="calendar-login-button30 button">
+                <span>8:00 - 11:00</span>
               </button>
             </div>
             <div class="calendar-login-container23">
-              <button type="button" class="calendar-login-button32 button">
-                8:00 - 11:00
+              <button type="button" class="calendar-login-button31 button">
+                <span>8:00 - 11:00</span>
               </button>
             </div>
           </div>
           <div class="calendar-login-container24">
             <div class="calendar-login-container25">
-              <button type="button" class="calendar-login-button33 button">
+              <button type="button" class="calendar-login-button32 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container26">
-              <button type="button" class="calendar-login-button34 button">
+              <button type="button" class="calendar-login-button33 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container27">
-              <button type="button" class="calendar-login-button35 button">
+              <button type="button" class="calendar-login-button34 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container28">
-              <button type="button" class="calendar-login-button36 button">
+              <button type="button" class="calendar-login-button35 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container29">
-              <button type="button" class="calendar-login-button37 button">
+              <button type="button" class="calendar-login-button36 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container30">
-              <button type="button" class="calendar-login-button38 button">
+              <button type="button" class="calendar-login-button37 button">
                 11:00 - 14:00
               </button>
             </div>
             <div class="calendar-login-container31">
-              <button type="button" class="calendar-login-button39 button">
+              <button type="button" class="calendar-login-button38 button">
                 11:00 - 14:00
               </button>
             </div>
           </div>
           <div class="calendar-login-container32">
             <div class="calendar-login-container33">
-              <button type="button" class="calendar-login-button40 button">
+              <button type="button" class="calendar-login-button39 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container34">
-              <button type="button" class="calendar-login-button41 button">
+              <button type="button" class="calendar-login-button40 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container35">
-              <button type="button" class="calendar-login-button42 button">
+              <button type="button" class="calendar-login-button41 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container36">
-              <button type="button" class="calendar-login-button43 button">
+              <button type="button" class="calendar-login-button42 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container37">
-              <button type="button" class="calendar-login-button44 button">
+              <button type="button" class="calendar-login-button43 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container38">
-              <button type="button" class="calendar-login-button45 button">
+              <button type="button" class="calendar-login-button44 button">
                 14:00 - 17:00
               </button>
             </div>
             <div class="calendar-login-container39">
-              <button type="button" class="calendar-login-button46 button">
+              <button type="button" class="calendar-login-button45 button">
                 14:00 - 17:00
               </button>
             </div>
           </div>
           <div class="calendar-login-container40">
             <div class="calendar-login-container41">
-              <button type="button" class="calendar-login-button47 button">
+              <button type="button" class="calendar-login-button46 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container42">
-              <button type="button" class="calendar-login-button48 button">
+              <button type="button" class="calendar-login-button47 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container43">
-              <button type="button" class="calendar-login-button49 button">
+              <button type="button" class="calendar-login-button48 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container44">
-              <button type="button" class="calendar-login-button50 button">
+              <button type="button" class="calendar-login-button49 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container45">
-              <button type="button" class="calendar-login-button51 button">
+              <button type="button" class="calendar-login-button50 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container46">
-              <button type="button" class="calendar-login-button52 button">
+              <button type="button" class="calendar-login-button51 button">
                 17:00 - 20:00
               </button>
             </div>
             <div class="calendar-login-container47">
-              <button type="button" class="calendar-login-button53 button">
+              <button type="button" class="calendar-login-button52 button">
                 17:00 - 20:00
               </button>
             </div>
@@ -534,7 +529,7 @@
               src="public/smaczne%201-1500h.png"
               class="calendar-login-image3"
             />
-            <span class="calendar-login-text58">
+            <span class="calendar-login-text60">
               <span>© 2023 Zamów Produkty,</span>
               <br />
               <span>All Rights Reserved.</span>
@@ -567,26 +562,26 @@
           <div class="calendar-login-links-container">
             <div class="calendar-login-container49">
               <div class="calendar-login-container50">
-                <span class="calendar-login-text62">Firma</span>
-                <span class="calendar-login-text63">O nas</span>
-                <span class="calendar-login-text64">Kariera</span>
-                <span class="calendar-login-text65">Kontakt</span>
+                <span class="calendar-login-text64">Firma</span>
+                <span class="calendar-login-text65">O nas</span>
+                <span class="calendar-login-text66">Kariera</span>
+                <span class="calendar-login-text67">Kontakt</span>
               </div>
             </div>
             <div class="calendar-login-container51">
               <div class="calendar-login-container52">
-                <span class="calendar-login-text66">Pomoc</span>
-                <span class="calendar-login-text67">Regulamin</span>
-                <span class="calendar-login-text68">Zwroty i reklamacje</span>
-                <span class="calendar-login-text69">Polityka prywatności</span>
-                <span class="calendar-login-text70">
+                <span class="calendar-login-text68">Pomoc</span>
+                <span class="calendar-login-text69">Regulamin</span>
+                <span class="calendar-login-text70">Zwroty i reklamacje</span>
+                <span class="calendar-login-text71">Polityka prywatności</span>
+                <span class="calendar-login-text72">
                   Polityka plików cookie
                 </span>
               </div>
               <div class="calendar-login-container53">
-                <span class="calendar-login-text71">Kontakt</span>
-                <span class="calendar-login-text72">Pomoc i wsparcie</span>
-                <span class="calendar-login-text73">Współpracuj z nami</span>
+                <span class="calendar-login-text73">Kontakt</span>
+                <span class="calendar-login-text74">Pomoc i wsparcie</span>
+                <span class="calendar-login-text75">Współpracuj z nami</span>
               </div>
             </div>
           </div>

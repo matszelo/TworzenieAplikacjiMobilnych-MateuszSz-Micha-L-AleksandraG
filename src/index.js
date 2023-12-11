@@ -115,7 +115,9 @@ function success(position) {
 }
 
 // Dodanie nasłuchiwania na kliknięcie przycisku o id "find-me" i wywołanie funkcji geoFindMe
-document.querySelector("#find-me").addEventListener("click", geoFindMe);
+document.querySelector("#find-me").addEventListener("click", () => {
+  geoFindMe(); // Wywołaj funkcję geoFindMe po kliknięciu, a wibracje zostaną wywołane w odpowiedzi na tę interakcję
+});
 
 
 

@@ -67,6 +67,16 @@ self.addEventListener('fetch', event => {
   );
 });
 
+self.addEventListener('push', function(event) {
+  const options = {
+    body: event.data.text(),
+  };
+
+  event.waitUntil(
+    self.registration.showNotification('Rejestracja', options)
+  );
+});
+
 /*
 self.addEventListener('notificationclick', function (event) {
   event.notification.close();

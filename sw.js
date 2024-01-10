@@ -1,14 +1,19 @@
+// Definicja stałej dla nazwy statycznej pamięci podręcznej
 const staticCacheName = 'site-static-v2';
-const dynamicCache = 'site-dynamic-v2'
-const assets = [
-  "./",
-  './index.html',
-  './index.css',
-  './style.css',
-  './images/logo192.png',
-  './login-page.html',
 
+// Definicja stałej dla nazwy dynamicznej pamięci podręcznej
+const dynamicCache = 'site-dynamic-v2';
+
+// Lista zasobów do umieszczenia w pamięci podręcznej
+const assets = [
+  "./",                   // Główny katalog (często korzeń projektu)
+  './index.html',         // Plik HTML strony głównej
+  './index.css',          // Plik CSS dla strony głównej
+  './style.css',          // Dodatkowy plik CSS
+  './images/logo192.png', // Obrazek logo w formacie PNG
+  './login-page.html',    // Plik HTML strony logowania
 ];
+
 
 
 

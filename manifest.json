@@ -1,35 +1,22 @@
 {
-    // Nazwa aplikacji
     "name": "Zamów produkty",
-
-    // Krótka nazwa aplikacji
     "short_name": "Zamów produkty",
-
-    // Początkowy URL aplikacji
     "start_url": ".",
-
-    // Kolor motywu aplikacji
     "theme_color": "#016188",
-
-    // Kolor tła aplikacji
     "background_color": "#eeeeee",
-
-    // Sposób wyświetlania aplikacji (standalone oznacza, że będzie działać jak osobna aplikacja)
     "display": "standalone",
-
-    // Lista ikon dla różnych rozmiarów
-    "icons": [
+    "icons" : [
         {
-            "src": "images/logo192.png",   // Ścieżka do ikony 192x192
+            "src": "images/logo192.png",
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "any maskable"      // Cel ikony (w tym przypadku, "any maskable")
+            "purpose": "any maskable"
         },
         {
-            "src": "images/logo512.png",   // Ścieżka do ikony 512x512
+            "src": "images/logo512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any maskable"      // Cel ikony (w tym przypadku, "any maskable")
+            "purpose": "any maskable"           
         }
     ]
 }

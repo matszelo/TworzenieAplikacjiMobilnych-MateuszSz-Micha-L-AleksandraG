@@ -1,8 +1,8 @@
 // Definicja stałej dla nazwy statycznej pamięci podręcznej
-const staticCacheName = 'site-static-v2';
+const staticCacheName = 'site-static-v0';
 
 // Definicja stałej dla nazwy dynamicznej pamięci podręcznej
-const dynamicCache = 'site-dynamic-v2';
+const dynamicCache = 'site-dynamic-v0';
 
 // Lista zasobów do umieszczenia w pamięci podręcznej
 const assets = [
